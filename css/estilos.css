@@ -830,13 +830,15 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f7e
     top: 0px;
     transition: all 450ms ease ;
     width: 100%;
-    transition: all 450ms ease;
+    
 
 }
 
 .cards__background:hover{
     scale: 110%;
     filter: grayscale(0%);
+    overflow: hidden;
+    
 }
 
 .cards__background2{
@@ -992,11 +994,8 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f7e
 
 .lemon__cards{
     margin-top: 19%;
-    max-width: 100%;
+    max-width: 20%;
     height: auto;
-    scale: 200%;
-    margin-right: 77%;
-    margin-left: 8%;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
     border-radius: 5px;
 }
