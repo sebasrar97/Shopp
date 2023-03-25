@@ -45,7 +45,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #00000000 0%,#0000003d 100%), url(../Recursos/market4.jpg);
+    background-image: linear-gradient(180deg, #00000000 0%,#00000000 100%), url(../Recursos/market4.jpg);
     background-size: cover;
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     z-index: -1;
@@ -683,7 +683,7 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f7e
 
 .questions__arrow{
     border-radius: 50%;
-    background-color: #001a49;
+    background-color: #fb173c ;
     width: 25px;
     height: 25px;
     display: flex;
@@ -696,7 +696,7 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f7e
 }
 
 .questions__arrow:hover{
-    
+    background-color: #001a49 ;
     box-shadow: #000;
     scale: 110%;
 }
@@ -819,124 +819,250 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f7e
     
 }
 
+
+
+.cards__background {
+
+    position: relative;
+    background-image: url('../Recursos/alimentos.jpg');
+    background-size: cover;
+    transition: all 450ms ease ;
+
+    
+}
+.cards__background::before {
+    content: "";
+    position: absolute;
+    transition: all 450ms ease ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Recursos/alimentos.jpg');
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+
+
+.cards__background p {
+    position: relative;
+    z-index: 1;
+}
+
+.cards__background:hover::before {
+
+    filter: grayscale(0%);
+    scale: 110%;
+    
+}
+
+
+/*  
+
 .cards__background {
     border-radius: 10px;
-    filter: grayscale(100%);
     background-image: url(../Recursos/alimentos.jpg);
+    filter: grayscale(100%);
+    background-size: cover;
     height: 100%;
     left:0%;
     position: absolute;
     top: 0px;
     transition: all 450ms ease ;
     width: 100%;
-    z-index: 1;
+    
     
 
 }
 
 .cards__background:hover{
     scale: 110%;
-    filter: grayscale(1%);
-    z-index: 2;
-    position: unset;
+    filter: grayscale(0%);
+    
+    
+}
+*/
+
+.cards__background2 {
+
+    position: relative;
+    background-image: url('../Recursos/dispositivos.jpg');
+    background-size: cover;
+    transition: all 450ms ease ;
+
+    
+}
+.cards__background2::before {
+    content: "";
+    position: absolute;
+    transition: all 450ms ease ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Recursos/dispositivos.jpg');
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+
+
+.cards__background2 p {
+    position: relative;
+    z-index: 1;
+}
+
+.cards__background2:hover::before {
+
+    filter: grayscale(0%);
+    scale: 110%;
     
 }
 
-.cards__background2{
-    border-radius: 10px;
-    filter: grayscale(100%);
-    background-image: url(../Recursos/dispositivos.jpg);
-    height: 100%;
-    left:0%;
-    position: absolute;
-    top: 0px;
+.cards__background3 {
+
+    position: relative;
+    background-image: url('../Recursos/dispositivos.jpg');
     transition: all 450ms ease ;
-    width: 100%;
 
-}
-
-.cards__background2:hover{
-    scale: 110%;
-    filter: grayscale(0%);
-
-}
-
-.cards__background3{
-    border-radius: 10px;
-    filter: grayscale(100%);
-    background-image: url(../Recursos/celulares.jpg);
-    height: 100%;
-    left:0%;
-    position: absolute;
-    top: 0px;
-    transition: all 450ms ease ;
-    width: 100%;
-
-}
-
-.cards__background3:hover{
-    scale: 110%;
-    filter: grayscale(0%);
-
-}
-
-.cards__background4{
-    border-radius: 10px;
-    filter: grayscale(100%);
-    background-image: url(../Recursos/ropa.jpg);
-    height: 100%;
-    left:0%;
-    position: absolute;
-    top: 0px;
-    transition: all 450ms ease ;
-    width: 100%;
-
-}
-
-.cards__background4:hover{
-    scale: 110%;
-    filter: grayscale(0%);
-
-}
-
-.cards__background5{
-    border-radius: 10px;
-    filter: grayscale(100%);
-    background-image: url(../Recursos/panaderia.jpg);
-    height: 100%;
-    left:0%;
-    position: absolute;
-    top: 0px;
-    transition: all 450ms ease ;
-    width: 100%;
-
-}
-
-.cards__background5:hover{
-    scale: 110%;
-    filter: grayscale(0%);
-
-}
-
-.cards__background6{
-    border-radius: 10px;
-    filter: grayscale(100%);
-    background-image: url(../Recursos/deportes.jpg);
-    height: 100%;
-    left:0%;
     
+}
+.cards__background3::before {
+    content: "";
     position: absolute;
-    top: 0px;
     transition: all 450ms ease ;
+    top: 0;
+    left: 0;
     width: 100%;
-
+    height: 100%;
+    background-image: url('../Recursos/celulares.jpg');
+    filter: grayscale(100%);
 }
 
-.cards__background6:hover{
-    scale: 110%;
+
+
+.cards__background3 p {
+    position: relative;
+    z-index: 1;
+}
+
+.cards__background3:hover::before {
+
     filter: grayscale(0%);
-
+    scale: 110%;
+    
 }
+
+
+
+.cards__background4 {
+
+    position: relative;
+    background-image: url('../Recursos/dispositivos.jpg');
+    transition: all 450ms ease ;
+
+    
+}
+.cards__background4::before {
+    content: "";
+    position: absolute;
+    transition: all 450ms ease ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Recursos/ropa.jpg');
+    filter: grayscale(100%);
+}
+
+
+
+.cards__background4 p {
+    position: relative;
+    z-index: 1;
+}
+
+.cards__background4:hover::before {
+
+    filter: grayscale(0%);
+    scale: 110%;
+    
+}
+
+
+.cards__background5 {
+
+    position: relative;
+    background-image: url('../Recursos/dispositivos.jpg');
+    background-size: cover;
+    transition: all 450ms ease ;
+
+    
+}
+.cards__background5::before {
+    content: "";
+    position: absolute;
+    transition: all 450ms ease ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Recursos/panaderia.jpg');
+    background-size: cover;
+    filter: grayscale(100%);
+}
+
+
+
+.cards__background5 p {
+    position: relative;
+    z-index: 1;
+}
+
+.cards__background5:hover::before {
+
+    filter: grayscale(0%);
+    scale: 110%;
+    
+}
+
+.cards__background6 {
+
+    position: relative;
+    background-image: url('../Recursos/dispositivos.jpg');
+    transition: all 450ms ease ;
+
+    
+}
+.cards__background6::before {
+    content: "";
+    position: absolute;
+    transition: all 450ms ease ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../Recursos/deportes.jpg');
+    filter: grayscale(100%);
+}
+
+
+
+.cards__background6 p {
+    position: relative;
+    z-index: 1;
+}
+
+.cards__background6:hover::before {
+
+    filter: grayscale(0%);
+    scale: 110%;
+    
+}
+
+
+
 
 .cards{
     background-color: #1e1e1e;
@@ -972,9 +1098,10 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f7e
 .cards__content-header2{
     display: flex;
     flex-direction: column;
-    z-index: 1000;
+    filter: none;
     padding: 10%;
     position: relative;
+    
 
 }
 
@@ -993,12 +1120,15 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f7e
 }
 
 .lemon__cards{
-    margin-top: 19%;
-    max-width: 20%;
+    margin-top: 10%;
+    max-width: 25%;
     height: auto;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
     border-radius: 5px;
+    transition: all 450ms ease;
 }
+
+
 
 
 
@@ -1103,6 +1233,15 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f7e
 /* Media queris */
 
 @media (max-width: 1700px){
+
+    .hero::before{
+        
+        background-image: linear-gradient(180deg, #00000000 0%,#00000096 100%), url(../Recursos/market4.jpg);
+        
+    
+    
+    }
+
     .superpromo__icon{
         scale: 600%;
 
@@ -1116,6 +1255,17 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f7e
     font-size: 5rem;
     }
 }
+
+
+@media (max-width: 1485px){
+    .lemon__cards{
+
+        margin-top: 15%;
+    }
+
+
+}
+
 
 @media (max-width: 1300px){
 
@@ -1142,13 +1292,9 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f7e
     }
     
     .lemon__cards{
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
-        border-radius: 5px;
-        
-        max-width: 25px;
-        margin-top: 7%;
-        margin-bottom: 15%;
-        margin-left: 5%;
+
+        margin-top: 5%;
+        max-width: 15%;
         
 
 
@@ -1168,14 +1314,20 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f7e
     .promos{
     font-size: 3.5rem;
     }
+
+    .lemon__cards{
+
+        margin-top: 5%;
+        max-width: 15%;
+    }
 }
 @media (max-width: 1075px){
     
     
     .lemon__cards{
 
-        margin-top: 8%;
-        margin-bottom: 5%;
+        margin-top: 5%;
+        max-width: 15%;
     }
 
 
@@ -1204,8 +1356,8 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f7e
 
     .lemon__cards{
 
-        margin-top: 9%;
-        margin-bottom: 5%;
+        margin-top: 10%;
+        max-width: 18%;
     }
 
     .promos{
@@ -1220,8 +1372,7 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f7e
 
     .lemon__cards{
 
-        margin-top: 11%;
-        margin-bottom: 5%;
+        
     }
     .superpromo__icon{
         scale: 250%;
@@ -1361,13 +1512,12 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f7e
 
     .lemon__cards{
 
-        margin-top: 12%;
-        margin-bottom: 5%;
-        margin-left: 7%;
+        margin-top: 10%;
+        max-width: 20%;
     }
 }
 
-@media (max-width:697px){
+@media (max-width:705px){
 
 
 .superpromo__icon{
@@ -1382,6 +1532,12 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f7e
 
 .promos{
     font-size: 2.5rem;
+}
+
+.lemon__cards{
+
+    margin-top: 15%;
+    max-width: 26%;
 }
 
 }
@@ -1540,6 +1696,13 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f7e
 .cards{
     width: 100%;
 }
+
+.lemon__cards{
+
+    margin-top: 10%;
+    max-width: 22%;
+}
+
 }
 
 @media (max-width:523px){
@@ -1574,17 +1737,17 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f7e
     .cards{
         width: 100%;
     }
+
+    .cards__content-header2{
+
+        padding-top: 7%;
+    }
+
+
     .lemon__cards{
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
-        border-radius: 5px;
-        
-        max-width: 25px;
-        margin-top: 7%;
-        margin-bottom: 15%;
-        margin-left: 5%;
-        
 
-
+        margin-top: 2%;
+        max-width: 15%;
     }
 
 }
@@ -1600,29 +1763,33 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f7e
             font-size: 1.5rem;
         }
 
+        .superpromo__icon{
+            scale: 150%;
+            margin-bottom: 2%;
+        
+        }
+        
+        .icono__section{
+            font-size: 2rem;
+        }
+        
+        .promos{
+            font-size: 1.5rem;
+        }
+        .subtitlenew{
+            font-size: 1.5rem;
+        }
+        
+
+        .lemon__cards{
+
+            margin-top: 4%;
+            max-width: 15%;
+        }
+
 }
 
-@media (max-width:487px){
-.superpromo__icon{
-    scale: 150%;
-    margin-bottom: 2%;
 
-}
-
-.icono__section{
-    font-size: 2rem;
-}
-
-.promos{
-    font-size: 1.5rem;
-}
-.subtitlenew{
-    font-size: 1.5rem;
-}
-
-
-
-}
 
 
 @media (max-width:385px){
@@ -1634,6 +1801,12 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #f7e
 
     .line3{
         height: 6px;
+    }
+
+    .lemon__cards{
+
+        margin-top: 6%;
+        max-width: 19%;
     }
 
 }
